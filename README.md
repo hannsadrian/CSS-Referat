@@ -4,5 +4,5 @@
 # CSS Referat
 Computer science presentation about CSS
 
-`Work in progress - when ready, available at:`<br/>
+`Work in progress - when ready available at:`<br/>
 [css.hannsadrian.de](https://css.hannsadrian.de/)
