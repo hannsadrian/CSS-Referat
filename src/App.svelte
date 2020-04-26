@@ -10,19 +10,17 @@
     export let url = "";
 </script>
 
-<main class="bg-gray-100 min-h-screen">
+<main class="bg-gray-100 min-h-screen h-full">
     <Tailwindcss/>
     <Router {url}>
-        <div>
-            <PageAnimator path="/">
-                <Home/>
-            </PageAnimator>
-            <PageAnimator path="download">
-              <Download/>
-            </PageAnimator>
-            <PageAnimator>
-                <Error code="404" message="The page you are looking for is not here"/>
-            </PageAnimator>
-        </div>
+        <PageAnimator path="/">
+            <Home/>
+        </PageAnimator>
+        <PageAnimator path="download">
+            <Download/>
+        </PageAnimator>
+        <PageAnimator>
+            <Error code="404" message="The page you are looking for is not here"/>
+        </PageAnimator>
     </Router>
 </main>

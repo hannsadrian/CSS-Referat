@@ -6,7 +6,7 @@
 
 
 <Route {path}>
-    <div class="absolute w-full" transition:fade="{{ duration: 100 }}">
+    <div class="w-full h-full" transition:fade="{{ duration: 100 }}">
         <slot/>
     </div>
 </Route>
