@@ -10,6 +10,10 @@
   color: white;
 }
 
+.text-blue {
+  color: #1444ff;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
