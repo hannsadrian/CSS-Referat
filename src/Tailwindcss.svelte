@@ -10,6 +10,10 @@
   color: white;
 }
 
+.bg-hover-blue:hover {
+  background-color: #1444ff;
+}
+
 .text-blue {
   color: #1444ff;
 }

@@ -57,9 +57,9 @@
   {#each entries as entry}
     <div class="xl:w-1/2">
       <Link to={entry.link}>
-        <div class="m-2 w-auto p-4 cursor-pointer hover:bg-white rounded border border-gray-400 transition duration-200 shadow hover:shadow-md">
+        <div class="m-2 w-auto p-4 cursor-pointer group bg-white bg-hover-blue hover:text-white rounded border border-gray-400 transition duration-200 shadow hover:shadow-none">
           <h1 class="text-xl -mt-1 font-bold">{entry.name}</h1>
-          <p class="text-gray-700 text-sm">
+          <p class="transition duration-200 text-gray-700 group-hover:text-white text-sm">
             {@html entry.description}
           </p>
         </div>
