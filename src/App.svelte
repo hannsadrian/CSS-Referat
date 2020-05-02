@@ -8,6 +8,7 @@
     import Download from "./views/Download.svelte";
     import History from "./views/stories/History.svelte";
     import Embed from "./views/stories/Embed.svelte";
+    import Attributes from "./views/stories/Attributes.svelte";
 
     export let url = "";
 </script>
@@ -26,6 +27,9 @@
         </PageAnimator>
         <PageAnimator path="story/embed">
             <Embed/>
+        </PageAnimator>
+        <PageAnimator path="story/attributes">
+            <Attributes/>
         </PageAnimator>
         <PageAnimator>
             <Error code="404" message="The page you are looking for is not here"/>
