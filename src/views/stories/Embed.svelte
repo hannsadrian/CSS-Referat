@@ -4,16 +4,11 @@
     import CodeContainer from "../../utils/Layout/CodeContainer.svelte";
     import Subtitle from "../../utils/Layout/Subtitle.svelte";
     import Annotation from "../../utils/Layout/Annotation.svelte";
-    import { onMount } from 'svelte';
-
-    onMount(async () => {
-        PR.prettyPrint()
-    });
 </script>
 
 <Container>
     <Title>🦐 Einbinden in HTML</Title>
-    <p>Es gibt drei verschiedene Möglichkeiten, CSS einzubinden:</p>
+    <p>Es gibt drei verschiedene Möglichkeiten, CSS in HTML einzubinden:</p>
 
     <Subtitle>1. Einbinden einer externen CSS Datei</Subtitle>
     <CodeContainer>
@@ -23,11 +18,11 @@
         "    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n"+
         "  </head>\n"+
         "  <body>\n"+
-        "    <h1>Beispiel</h1>\n"+
+        "    <h1 class='titel'>Beispiel</h1>\n"+
         "  </body>\n"+
         "</html>"}
     </CodeContainer>
-    <Annotation>Damit diese HTML Datei funktioniert, muss die Datei <code>style.css</code> im selben Verzeichnis vorhanden sein.</Annotation>
+    <Annotation>Damit die CSS Attribute wirksam werden, muss die Datei <code>style.css</code> im selben Verzeichnis wie die HTML Datei vorhanden sein.</Annotation>
 
     <Subtitle>2. CSS im <code>{"<head>"}</code> einbetten</Subtitle>
     <CodeContainer>
@@ -39,18 +34,18 @@
         "        background-color: lightblue;\n"+
         "      }\n"+
         "\n"+
-        "      h1 {\n"+
+        "      .titel {\n"+
         "        color: navy;\n"+
         "        margin-left: 20px;\n"+
         "      }\n"+
         "    </style>\n"+
         "  </head>\n"+
         "  <body>\n"+
-        "    <h1>Beispiel</h1>\n"+
+        "    <h1 class='titel'>Beispiel</h1>\n"+
         "  </body>\n"+
         "</html>"}
     </CodeContainer>
-    <Annotation>Hier werden die CSS Klassen direkt im HTML Dokument geschrieben. Mit dieser Methode kann man CSS Klassen jedoch nicht in anderen HTML Dokumenten verwenden.</Annotation>
+    <Annotation>Hier werden die CSS Klassen direkt im HTML Dokument geschrieben. Mit dieser Methode kann man CSS Klassen jedoch Dokumentenübergreifend verwenden.</Annotation>
 
     <Subtitle>3. CSS im Element einbetten</Subtitle>
     <CodeContainer>
@@ -63,5 +58,5 @@
         "  </body>\n"+
         "</html>"}
     </CodeContainer>
-    <Annotation>Diese Herangehensweise gleicht der 2., bloß werden die Attribute anstatt in Klassen direkt im Element deklariert.</Annotation>
+    <Annotation>Diese Herangehensweise gleicht der zweiten, bloß werden die Attribute anstatt in Klassen direkt im Element deklariert.</Annotation>
 </Container>
