@@ -1,0 +1,1 @@
+<span class="p-1 bg-gray-300 text-red-600 font-mono rounded"><slot/></span>
