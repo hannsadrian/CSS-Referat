@@ -1,6 +1,5 @@
 <script>
     import Tailwindcss from "./Tailwindcss.svelte";
-    import { Router, Link, navigate } from "svelte-routing";
     import {Router, Link, navigate} from "svelte-routing";
     import PageAnimator from "./utils/PageAnimator.svelte";
 
@@ -8,6 +7,7 @@
     import Error from "./views/Error.svelte";
     import Download from "./views/Download.svelte";
     import History from "./views/stories/History.svelte";
+    import Embed from "./views/stories/Embed.svelte";
 
     export let url = "";
 </script>
@@ -23,6 +23,9 @@
         </PageAnimator>
         <PageAnimator path="story/history">
             <History/>
+        </PageAnimator>
+        <PageAnimator path="story/embed">
+            <Embed/>
         </PageAnimator>
         <PageAnimator>
             <Error code="404" message="The page you are looking for is not here"/>
