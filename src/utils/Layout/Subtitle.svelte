@@ -1,0 +1,1 @@
+<h2 class="text-lg font-semibold mt-4"><slot/></h2>

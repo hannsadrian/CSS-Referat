@@ -1,0 +1,1 @@
+<h1 class="-ml-3 mb-4 text-5xl font-dosis font-bold"><slot/></h1>
