@@ -9,6 +9,7 @@
     import History from "./views/stories/History.svelte";
     import Embed from "./views/stories/Embed.svelte";
     import Attributes from "./views/stories/Attributes.svelte";
+    import Selectors from "./views/stories/Selectors.svelte";
 
     export let url = "";
 </script>
@@ -22,6 +23,7 @@
         <PageAnimator path="story/history"><History/></PageAnimator>
         <PageAnimator path="story/embed"><Embed/></PageAnimator>
         <PageAnimator path="story/attributes"><Attributes/></PageAnimator>
+        <PageAnimator path="story/selectors"><Selectors/></PageAnimator>
 
         <PageAnimator>
             <Error code="404" message="The page you are looking for is not here"/>
