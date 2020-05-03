@@ -10,6 +10,7 @@
     import Embed from "./views/stories/Embed.svelte";
     import Attributes from "./views/stories/Attributes.svelte";
     import Selectors from "./views/stories/Selectors.svelte";
+    import Combinators from "./views/stories/Combinators.svelte";
 
     export let url = "";
 </script>
@@ -24,6 +25,7 @@
         <PageAnimator path="story/embed"><Embed/></PageAnimator>
         <PageAnimator path="story/attributes"><Attributes/></PageAnimator>
         <PageAnimator path="story/selectors"><Selectors/></PageAnimator>
+        <PageAnimator path="story/combinators"><Combinators/></PageAnimator>
 
         <PageAnimator>
             <Error code="404" message="The page you are looking for is not here"/>
