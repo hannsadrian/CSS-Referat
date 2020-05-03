@@ -37,7 +37,7 @@
     <Subtitle>Background ｰ <span class="bg-green-300">Hintergrund</span></Subtitle>
     <CodeContainer format="css">background: green;</CodeContainer>
     <Annotation>Das Background Attribut bestimmt in diesem Fall die Hintergrundfarbe, es ist aber auch möglich ein
-        Hintergrundbild oder einen Farbverlauf zu verwenden.
+        Bild oder einen Farbverlauf als Hintergrund zu verwenden.
     </Annotation>
 
     <Subtitle>
