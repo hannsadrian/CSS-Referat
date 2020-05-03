@@ -51,4 +51,15 @@
     <CodeContainer>fontｰfamily: Times;</CodeContainer>
     <Annotation>Durch das <code>fontｰfamily</code> Attribut wird es möglich die Schriftart von Überschriften, Paragraphen, Tabellen und Listen zu ändern.</Annotation>
 
+    <Subtitle>Font Size - <span class="text-2xl">Schriftgröße</span></Subtitle>
+    <CodeContainer>font-size: 30px;</CodeContainer>
+    <Annotation>Das Ändern der Schriftgröße von Überschriften, Paragraphen, Tabellen und Listen ist mit dem Attribut <code>font-size</code> möglich.</Annotation>
+
+    <Subtitle>Font Weight - <span class="font-thin">Schriftgewicht</span></Subtitle>
+    <CodeContainer>font-weight: lighter;</CodeContainer>
+    <Annotation>
+        Um das Schriftgewicht zu bestimmen ist es entweder möglich Begriffe wie <code>normal, bold, bolder, lighter</code> oder Nummern von 100-900 zu verwenden.<br/>
+        Verwendet man Nummern ist 100 die dünnste und 900 die dickste Schrift, es funktionieren nur hunderter Stellen (..., 400, 500, 600, ...).
+    </Annotation>
+
 </Container>
