@@ -13,6 +13,7 @@
     import Combinators from "./views/stories/Combinators.svelte";
     import Pseudoclasses from "./views/stories/Pseudoclasses.svelte";
     import MediaQueries from "./views/stories/MediaQueries.svelte";
+    import Frameworks from "./views/stories/Frameworks.svelte";
 
     export let url = "";
 </script>
@@ -30,6 +31,7 @@
         <PageAnimator path="story/combinators"><Combinators/></PageAnimator>
         <PageAnimator path="story/pseudoclasses"><Pseudoclasses/></PageAnimator>
         <PageAnimator path="story/mediaqueries"><MediaQueries/></PageAnimator>
+        <PageAnimator path="story/frameworks"><Frameworks/></PageAnimator>
 
         <PageAnimator>
             <Error code="404" message="The page you are looking for is not here"/>
