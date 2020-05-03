@@ -1,6 +1,7 @@
 <script>
   import {Link} from "svelte-routing";
   import Container from "../utils/Layout/Container.svelte";
+  import Hyperlink from "../utils/Layout/Hyperlink.svelte";
 
   const entries = [
     {
@@ -26,12 +27,12 @@
     {
       name: "🍻 Kombinatoren",
       link: "/combinators",
-      description: 'Durch Kombinatoren ist es möglich, Selektoren miteinander zu kombinieren.<br/>Dadurch werden Attribute nur unter bestimmten Umständen angewendet.'
+      description: 'Durch Kombinatoren ist es möglich, Selektoren miteinander zu kombinieren.<br/>Dadurch werden Klassen nur an bestimmten Postitionen angewendet.'
     },
     {
       name: "🍟 Pseudoklassen",
       link: "/pseudoclasses",
-      description: 'Pseudoklassen sind wie Kombinatoren dazu da,<br/>Attribute nur unter bestimmten Bedingungen anzuwenden.'
+      description: 'Pseudoklassen sind ähnlich wie Kombinatoren dazu da,<br/>Klassen nur unter bestimmten Bedingungen anzuwenden.'
     },
     {
       name: "🔍 Media Queries",
@@ -50,7 +51,7 @@
   <h1 class="-ml-3 mb-4 text-5xl font-bold flex"><img class="h-16 my-auto" alt="" src="/logo.svg" /><span class="font-dosis my-auto pt-1">CSS</span></h1>
   <p class="font-semibold text-sm text-gray-600">HANNS ADRIAN BÖHME</p>
   <p>
-    Praktischer Teil zum zugehörigen <Link to="download"><span class="hover:underline cursor-pointer text-blue hover:text-blue-700">Referat</span></Link><br/>
+    Praktischer Teil zum zugehörigen <Hyperlink to="download">Referat</Hyperlink><br/>
     über <b>C</b>ascading <b>S</b>tyle <b>S</b>heets.
   </p>
   <hr class="mt-4 mb-3 border"/>

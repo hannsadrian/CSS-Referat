@@ -4,10 +4,12 @@
     import CodeContainer from "../../utils/Layout/CodeContainer.svelte";
     import Annotation from "../../utils/Layout/Annotation.svelte";
     import Subtitle from "../../utils/Layout/Subtitle.svelte";
+    import Hyperlink from "../../utils/Layout/Hyperlink.svelte";
 </script>
 
 <Container>
     <Title>🏜 CSS Attribute</Title>
+    <p>Attribute werden dazu verwendet bestimmte Design Paramter eines Elements zu verändern. Wie man Attribute anwendet ist im <Hyperlink to="/story/selectors">Selektoren</Hyperlink> Teil zu finden.</p>
 
     <Subtitle>Margin ｰ <span class="m-4">Außenabstand</span></Subtitle>
     <CodeContainer format="css">margin: 2px; /* Variationen: marginｰleft, marginｰtop, marginｰright, marginｰbottom */

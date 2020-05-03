@@ -4,11 +4,12 @@
     import CodeContainer from "../../utils/Layout/CodeContainer.svelte";
     import Subtitle from "../../utils/Layout/Subtitle.svelte";
     import Annotation from "../../utils/Layout/Annotation.svelte";
+    import Hyperlink from "../../utils/Layout/Hyperlink.svelte";
 </script>
 
 <Container>
     <Title>🦐 Einbinden in HTML</Title>
-    <p>Es gibt drei verschiedene Möglichkeiten, CSS in HTML einzubinden:</p>
+    <p>Es gibt drei verschiedene Möglichkeiten, CSS in HTML einzubinden. Wie man mit CSS Aussehen verändern kann ist im <Hyperlink to="/story/attributes">Attribut</Hyperlink> Teil zu finden.</p>
 
     <Subtitle>1. Einbinden einer externen CSS Datei</Subtitle>
     <CodeContainer>
